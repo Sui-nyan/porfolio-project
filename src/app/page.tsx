@@ -1,15 +1,17 @@
-import FourCorners from "@/app/components/fourCorners/FourCorners";
+import ProjectCardsContainer from "@/app/components/ProjectCards/ProjectCardsContainer";
+import TimelineContainer from "@/app/components/timeline/TimelineContainer";
 
 export default function Home() {
     return (
         <main className="home-page">
-            <div className="introduction">
-                <h1>Elisa Zhang</h1>
-                <p>Student in Stuttgart, Germany</p>
-                <p>Studying Computer Science as a German-Chinese double degree</p>
+            <div className="introduction flex flex-col items-center ">
+                <h1 className="text-8xl p-3">Elisa Zhang</h1>
+                <p className="p-1 text-xl">Student in Stuttgart, Germany</p>
+                <p className="p-1 text-xl">(Hopefully) Soon graduating from Stuttgart Media University
+                    with a German-Chinese double degree in Computer Science!</p>
             </div>
-
-            <FourCorners/>
+            <TimelineContainer/>
+            <ProjectCardsContainer/>
         </main>
     );
 }
