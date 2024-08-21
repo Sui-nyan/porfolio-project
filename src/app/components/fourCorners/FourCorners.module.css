@@ -1,8 +1,0 @@
-.fourCorners {
-    background-color: #511358ff;
-    color: #f1e7e4ff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-}
