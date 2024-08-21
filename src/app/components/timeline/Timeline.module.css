@@ -6,7 +6,25 @@
 }
 
 .timelineItem::after {
-    background-color: #59c9a5ff;
+    background-color: #e56399ff;
+    content: '';
+    right: -2px;
+    position: absolute;
+    width: 4px;
+    height: 100%;
+}
+
+.timelineItem:first-child::after {
+    background: linear-gradient(to top, #e56399ff 80%, rgba(229, 99, 153, 0.0));
+    content: '';
+    right: -2px;
+    position: absolute;
+    width: 4px;
+    height: 100%;
+}
+
+.timelineItem:last-child::after {
+    background: linear-gradient(to bottom, #e56399ff 80%, rgba(229, 99, 153, 0.0));
     content: '';
     right: -2px;
     position: absolute;
@@ -16,6 +34,7 @@
 
 .timelineItem:nth-child(odd)::after {
     left: -2px;
+    right: auto;
 }
 
 .timelineItem {
@@ -36,8 +55,8 @@
 .timelineItemContent {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    background-color: #fff;
-    color: black;
+    background-color: #f1e7e4ff;
+    color: #05052e;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -54,8 +73,8 @@
 }
 
 .timelineItemContent .circle {
-    background-color: #fff;
-    border: 3px solid #59c9a5ff;
+    background: radial-gradient(#f1e7e4ff 0%, #e56399ff 45%, #e56399ff 100%);
+    border: 3px solid #e56399ff;
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 10px);

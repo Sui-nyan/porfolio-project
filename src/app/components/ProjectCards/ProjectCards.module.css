@@ -8,8 +8,11 @@
 }
 
 .card {
+    background-color: #f1e7e4ff;
+    color: #000;
     height: 100%;
     position: relative;
+    border-radius: 15px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
@@ -19,7 +22,7 @@
     display: flex;
     gap: 0.5rem;
     padding: 0.25em;
-    border-radius: 1px;
+    border-radius: 5px;
     border: 0.2rem solid rgba(229, 99, 153, 0.45);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
